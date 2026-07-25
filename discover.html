@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Creators: Creatisphere Studios</title>
+<meta name="description" content="Search and filter Creatisphere creators by category: photographers, musicians, models, designers, artists, videographers, and content creators.">
+<link rel="icon" href="images/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Creatisphere Studios logo">
+      <span>Creatisphere</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="discover.html">Discover Creators</a>
+      <a href="community-cosmos.html">Community Cosmos</a>
+      <a href="knowledge-nova.html">Knowledge Nova</a>
+      <a href="growth-galaxy.html">Growth Galaxy</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#apply" class="btn btn-primary">Join Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Page hero ===== -->
+<section class="page-hero">
+  <img src="images/solar-flower-watermark.png" alt="" class="hero-glow">
+  <div class="container reveal">
+    <p class="eyebrow" style="justify-content:center;">
+      <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
+      Discover Creators
+    </p>
+    <h1>Find your next collaborator.</h1>
+    <p>Search and filter creatives by category to find who you need for your next project.</p>
+  </div>
+</section>
+
+<!-- ===== Discover grid ===== -->
+<section class="section-sand">
+  <div class="container">
+    <div class="discover-toolbar reveal">
+      <input type="text" class="search-input" placeholder="Search by name or skill..." aria-label="Search creators">
+      <div class="filter-pills">
+        <button class="filter-pill active" data-category="all">All</button>
+        <button class="filter-pill" data-category="photographer">Photographers</button>
+        <button class="filter-pill" data-category="musician">Musicians</button>
+        <button class="filter-pill" data-category="model">Models</button>
+        <button class="filter-pill" data-category="designer">Designers</button>
+        <button class="filter-pill" data-category="artist">Artists</button>
+        <button class="filter-pill" data-category="videographer">Videographers</button>
+        <button class="filter-pill" data-category="influencer">Content Creators</button>
+      </div>
+    </div>
+
+    <div class="creator-scroller stagger-group">
+      <div class="creator-card"
+        data-category="photographer" data-name="Amara Reed" data-role="Photographer" data-location="Atlanta, GA"
+        data-bio="Portrait and editorial photographer with an eye for warm, natural light. Loves collaborating on magazine features and brand lookbooks."
+        data-skills="Portrait, Editorial, Lighting" data-interests="Magazine features, Brand lookbooks, Fashion shoots"
+        data-img="https://images.unsplash.com/photo-1512813498716-3e640fed3f39?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="amara reed photographer portrait editorial lighting atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1512813498716-3e640fed3f39?auto=format&fit=crop&w=700&h=850&q=80" alt="Photographer holding a camera">
+        </div>
+        <div class="creator-info">
+          <h4>Amara Reed</h4>
+          <p class="role">Photographer</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="musician" data-name="Jordan Cole" data-role="Musician" data-location="Atlanta, GA"
+        data-bio="Guitarist, songwriter, and home producer blending soul and indie folk. Always looking for visual collaborators for live sessions."
+        data-skills="Guitar, Songwriting, Production" data-interests="Live sessions, Music videos, Album art"
+        data-img="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="jordan cole musician guitar songwriting production atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=700&h=850&q=80" alt="Musician playing guitar">
+        </div>
+        <div class="creator-info">
+          <h4>Jordan Cole</h4>
+          <p class="role">Musician</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="model" data-name="Nia Brooks" data-role="Model" data-location="Atlanta, GA"
+        data-bio="Runway and editorial model with commercial experience. Open to test shoots, brand campaigns, and designer showcases."
+        data-skills="Runway, Editorial, Commercial" data-interests="Photographer collabs, Brand campaigns, Designer showcases"
+        data-img="https://images.unsplash.com/photo-1611042553484-d61f84d22784?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="nia brooks model runway editorial commercial atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1611042553484-d61f84d22784?auto=format&fit=crop&w=700&h=850&q=80" alt="Fashion model portrait">
+        </div>
+        <div class="creator-info">
+          <h4>Nia Brooks</h4>
+          <p class="role">Model</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="designer" data-name="Theo Marsh" data-role="Designer" data-location="Atlanta, GA"
+        data-bio="Brand and graphic designer focused on identity systems, typography, and clean digital layouts for fellow creatives."
+        data-skills="Branding, Typography, Web Design" data-interests="Startup branding, Magazine layout, Packaging"
+        data-img="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="theo marsh designer branding typography web design atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=700&h=850&q=80" alt="Graphic designer working in studio">
+        </div>
+        <div class="creator-info">
+          <h4>Theo Marsh</h4>
+          <p class="role">Designer</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="artist" data-name="Sienna Vale" data-role="Artist" data-location="Atlanta, GA"
+        data-bio="Painter and muralist working in bold color and texture. Interested in gallery shows and large scale public art collaborations."
+        data-skills="Painting, Muraling, Illustration" data-interests="Gallery shows, Public art, Album covers"
+        data-img="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="sienna vale artist painting muraling illustration atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1501084817091-a4f3d1d19e07?auto=format&fit=crop&w=700&h=850&q=80" alt="Artist painting in studio">
+        </div>
+        <div class="creator-info">
+          <h4>Sienna Vale</h4>
+          <p class="role">Artist</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="videographer" data-name="Malik Osei" data-role="Videographer" data-location="Atlanta, GA"
+        data-bio="Documentary style videographer covering music, events, and brand stories. Brings a cinematic eye to every shoot."
+        data-skills="Cinematography, Editing, Drone" data-interests="Music videos, Event coverage, Brand documentaries"
+        data-img="https://images.unsplash.com/photo-1497015289639-54688650d173?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="malik osei videographer cinematography editing drone atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1497015289639-54688650d173?auto=format&fit=crop&w=700&h=850&q=80" alt="Videographer filming with a camera">
+        </div>
+        <div class="creator-info">
+          <h4>Malik Osei</h4>
+          <p class="role">Videographer</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+
+      <div class="creator-card"
+        data-category="influencer" data-name="Zoe Bennett" data-role="Content Creator" data-location="Atlanta, GA"
+        data-bio="Lifestyle and culture content creator building community across short form video. Looking for brand and creator collabs."
+        data-skills="Short Form Video, Storytelling, Community Building" data-interests="Brand partnerships, Creator collabs, Events coverage"
+        data-img="https://images.unsplash.com/photo-1603217039863-aa0c865404f7?auto=format&fit=crop&w=900&h=900&q=80"
+        data-search="zoe bennett content creator influencer short form video atlanta">
+        <div class="creator-avatar">
+          <img src="https://images.unsplash.com/photo-1603217039863-aa0c865404f7?auto=format&fit=crop&w=700&h=850&q=80" alt="Content creator filming on a phone">
+        </div>
+        <div class="creator-info">
+          <h4>Zoe Bennett</h4>
+          <p class="role">Content Creator</p>
+          <p class="loc">Atlanta, GA</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="no-results">No creators match your search yet. Try another category or keyword.</p>
+  </div>
+</section>
+
+<!-- ===== Final CTA ===== -->
+<section class="section-light cta-band">
+  <div class="container reveal">
+    <h2>Don't see your discipline yet?</h2>
+    <p style="max-width:520px;margin:0 auto 32px;color:var(--walnut);">Join the community and be one of the first creatives listed in your category.</p>
+    <div class="hero-actions">
+      <a href="contact.html#apply" class="btn btn-primary">Join the Community</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Profile modal ===== -->
+<div class="profile-modal">
+  <div class="profile-card">
+    <button class="profile-close" aria-label="Close profile">&times;</button>
+    <img src="" alt="" class="profile-photo">
+    <div class="profile-body">
+      <h3 class="profile-name"></h3>
+      <p class="role profile-role"></p>
+      <p class="loc profile-loc"></p>
+      <p class="bio profile-bio"></p>
+      <span class="profile-section-label">Skills</span>
+      <div class="tag-list profile-skills"></div>
+      <span class="profile-section-label">Collaboration Interests</span>
+      <div class="tag-list profile-interests"></div>
+      <a href="contact.html#apply" class="btn btn-primary">Request a Collaboration</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <img src="images/solar-flower-watermark.png" alt="" class="footer-mark">
+  <svg class="solar-flower footer-flower" viewBox="0 0 240 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="sfSphere4" cx="35%" cy="32%" r="75%">
+        <stop offset="0%" stop-color="#F8E7AE"/>
+        <stop offset="45%" stop-color="#D4AF37"/>
+        <stop offset="100%" stop-color="#8A621F"/>
+      </radialGradient>
+      <linearGradient id="sfLeaf4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#F3D998"/>
+        <stop offset="100%" stop-color="#9C6B1F"/>
+      </linearGradient>
+    </defs>
+
+    <path d="M120 415 C117 320 123 270 120 205" fill="none" stroke="#A67C2E" stroke-width="4" stroke-linecap="round"/>
+
+    <path fill="url(#sfLeaf4)" d="M120 300 C88 292 55 302 34 333 C66 322 98 320 120 308 Z"/>
+    <path fill="url(#sfLeaf4)" d="M120 300 C152 292 185 302 206 333 C174 322 142 320 120 308 Z"/>
+    <path fill="url(#sfLeaf4)" d="M120 352 C97 346 70 356 53 383 C79 373 106 371 120 361 Z"/>
+    <path fill="url(#sfLeaf4)" d="M120 352 C143 346 170 356 187 383 C161 373 134 371 120 361 Z"/>
+
+    <circle cx="50" cy="335" r="4" fill="var(--gold)"/>
+    <circle cx="190" cy="335" r="3.5" fill="var(--gold)"/>
+
+    <g transform="translate(120,110)">
+      <g class="spin-slower" style="transform-origin:0px 0px;">
+        <ellipse class="orbit-ring" rx="84" ry="26" transform="rotate(-18)" opacity="0.6"/>
+      </g>
+      <circle r="55" fill="url(#sfSphere4)"/>
+      <g class="spin-slower" style="transform-origin:0px 0px;">
+        <path class="orbit-ring" d="M 54,-19.9 A 84 26 0 0 1 54,19.9" transform="rotate(-18)" fill="none"/>
+      </g>
+      <g class="spin-slow" style="transform-origin:0px 0px;">
+        <circle class="orbit-dot" cx="80" cy="-14" r="5"/>
+        <circle class="orbit-dot" cx="98" cy="-2" r="3"/>
+      </g>
+    </g>
+  </svg>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Creatisphere Studios logo">
+        <p>A creative solar system based in Atlanta, connecting creatives with the community, exposure, and opportunities they need to build together.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="about.html">About</a>
+        <a href="discover.html">Discover Creators</a>
+        <a href="community-cosmos.html">Community Cosmos</a>
+        <a href="knowledge-nova.html">Knowledge Nova</a>
+        <a href="growth-galaxy.html">Growth Galaxy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="https://www.instagram.com/creatispherestudios/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@creatispherestudios" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.linkedin.com/in/creatisphere-studios-154155412/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.threads.com/@creatispherestudios" target="_blank" rel="noopener">Threads</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:creatispherestudios@gmail.com">creatispherestudios@gmail.com</a>
+        <a href="contact.html">Contact Page</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Creatisphere Studios. Your Creative Solar System.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
