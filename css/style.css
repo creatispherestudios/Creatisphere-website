@@ -1204,48 +1204,6 @@ section { padding: 110px 0; }
 .footer-flower { animation: float 7s var(--ease-premium) infinite; }
 .hero-glow { animation: float 9s var(--ease-premium) infinite; }
 
-/* ---------- Gold outline vines (line-art, matching the logo's orbit-ring style) ---------- */
-.side-vine {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 70px;
-  z-index: 1;
-  opacity: 0.7;
-  pointer-events: none;
-}
-
-.side-vine.vine-left { left: 0; }
-.side-vine.vine-right { right: 0; transform: scaleX(-1); }
-
-.vine-stem { fill: none; stroke: var(--gold); stroke-width: 1.5; stroke-linecap: round; opacity: 0.8; }
-.vine-leaf { fill: none; stroke: var(--gold); stroke-width: 1.5; }
-.vine-leaf.alt { fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0.85; }
-.vine-orbit-ring { fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0.75; }
-.vine-orbit-dot { fill: var(--gold); }
-
-.vine-leaf-wrap {
-  transform-box: fill-box;
-  transform-origin: 0% 50%;
-  animation: leaf-sway 6s ease-in-out infinite;
-}
-
-@keyframes leaf-sway {
-  0%, 100% { transform: rotate(-6deg); }
-  50% { transform: rotate(6deg); }
-}
-
-.side-vine .vine-leaf-wrap:nth-of-type(1) { animation-delay: 0s; animation-duration: 5.5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(2) { animation-delay: 0.8s; animation-duration: 6.5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(3) { animation-delay: 1.6s; animation-duration: 5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(4) { animation-delay: 0.4s; animation-duration: 7s; }
-.side-vine .vine-leaf-wrap:nth-of-type(5) { animation-delay: 1.2s; animation-duration: 6s; }
-.side-vine .vine-leaf-wrap:nth-of-type(6) { animation-delay: 2s; animation-duration: 5.8s; }
-
-@media (max-width: 600px) {
-  .side-vine { width: 34px; opacity: 0.55; }
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
   .pillars-grid { grid-template-columns: repeat(2, 1fr); }
