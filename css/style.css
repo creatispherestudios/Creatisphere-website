@@ -817,6 +817,62 @@ h1, h2, h3 {
 
 .honeypot-field { position: absolute; left: -9999px; opacity: 0; }
 
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  color: var(--walnut);
+  line-height: 1.5;
+}
+
+.form-checkbox input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--gold);
+  flex-shrink: 0;
+}
+
+.form-checkbox a { color: var(--sage); text-decoration: underline; }
+
+/* ---------- Legal pages (Privacy Policy, Terms of Service) ---------- */
+.legal-content { max-width: 760px; margin: 0 auto; }
+
+.legal-content .updated {
+  display: block;
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 36px;
+}
+
+.legal-content h2 {
+  font-size: 1.6rem;
+  margin-top: 44px;
+  margin-bottom: 14px;
+}
+.legal-content h2:first-of-type { margin-top: 0; }
+
+.legal-content p, .legal-content li {
+  color: var(--walnut);
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.legal-content ul { margin: 0 0 16px 22px; }
+.legal-content strong { color: var(--espresso); }
+
+.legal-links {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.legal-links a { color: var(--taupe); }
+.legal-links a:hover { color: var(--gold); }
+
 /* ---------- Section shells ---------- */
 section { padding: 110px 0; }
 
