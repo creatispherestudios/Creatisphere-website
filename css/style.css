@@ -1213,7 +1213,10 @@ section { padding: 110px 0; }
   .magazine-cover { max-width: 320px; margin: 0 auto; }
 }
 
-@media (max-width: 760px) {
+/* Nav switches to the hamburger menu well before the grid breakpoints below,
+   since "Community Cosmos" + "Knowledge Nova" + the Join Now button need more
+   room than a typical laptop window provides even above 760px. */
+@media (max-width: 1200px) {
   .nav-links {
     position: fixed;
     top: 68px;
@@ -1230,6 +1233,9 @@ section { padding: 110px 0; }
   }
   .nav-links.open { transform: translateY(0); }
   .nav-toggle { display: flex; }
+}
+
+@media (max-width: 760px) {
   .pillars-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
