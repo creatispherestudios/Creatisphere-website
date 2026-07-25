@@ -169,18 +169,21 @@ h1, h2, h3 {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 18px;
 }
 
 .nav-links a:not(.btn) {
   font-family: var(--font-label);
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--sand);
   transition: color var(--transition);
   position: relative;
+  white-space: nowrap;
 }
+
+.nav-links .btn { padding: 10px 22px; white-space: nowrap; }
 
 .nav-links a:not(.btn):hover,
 .nav-links a.active {
@@ -1216,7 +1219,7 @@ section { padding: 110px 0; }
 /* Nav switches to the hamburger menu well before the grid breakpoints below,
    since "Community Cosmos" + "Knowledge Nova" + the Join Now button need more
    room than a typical laptop window provides even above 760px. */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .nav-links {
     position: fixed;
     top: 68px;
