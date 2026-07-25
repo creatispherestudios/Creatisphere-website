@@ -1204,46 +1204,39 @@ section { padding: 110px 0; }
 .footer-flower { animation: float 7s var(--ease-premium) infinite; }
 .hero-glow { animation: float 9s var(--ease-premium) infinite; }
 
-/* ---------- Side vines (desktop-only background decoration) ---------- */
-.side-vine {
+/* ---------- Corner plant photos (real pothos photography, shown on every screen size) ---------- */
+.corner-plant {
   position: fixed;
   top: 0;
-  height: 100vh;
-  width: 130px;
-  z-index: 1;
-  opacity: 0.55;
+  width: clamp(90px, 11vw, 190px);
+  height: auto;
+  z-index: 2;
+  opacity: 0.92;
   pointer-events: none;
+  filter: sepia(0.4) saturate(1.5) hue-rotate(52deg) brightness(0.82) contrast(1.05);
+  mix-blend-mode: multiply;
+  animation: plant-sway 7s ease-in-out infinite;
 }
 
-.side-vine.vine-left { left: 0; }
-.side-vine.vine-right { right: 0; transform: scaleX(-1); }
-
-.vine-stem { fill: none; stroke: var(--sage); stroke-width: 5; stroke-linecap: round; }
-.vine-leaf { fill: var(--moss); }
-.vine-leaf.alt { fill: var(--sage); }
-.vine-orbit-ring { fill: none; stroke: var(--gold); stroke-width: 1.5; opacity: 0.75; }
-.vine-orbit-dot { fill: var(--gold); }
-
-.vine-leaf-wrap {
-  transform-box: fill-box;
-  transform-origin: 0% 50%;
-  animation: leaf-sway 6s ease-in-out infinite;
+.corner-plant.plant-left {
+  left: 0;
+  transform-origin: top left;
 }
 
-@keyframes leaf-sway {
-  0%, 100% { transform: rotate(-6deg); }
-  50% { transform: rotate(6deg); }
+.corner-plant.plant-right {
+  right: 0;
+  transform: scaleX(-1);
+  transform-origin: top right;
+  animation-delay: 1.5s;
 }
 
-.side-vine .vine-leaf-wrap:nth-of-type(1) { animation-delay: 0s; animation-duration: 5.5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(2) { animation-delay: 0.8s; animation-duration: 6.5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(3) { animation-delay: 1.6s; animation-duration: 5s; }
-.side-vine .vine-leaf-wrap:nth-of-type(4) { animation-delay: 0.4s; animation-duration: 7s; }
-.side-vine .vine-leaf-wrap:nth-of-type(5) { animation-delay: 1.2s; animation-duration: 6s; }
-.side-vine .vine-leaf-wrap:nth-of-type(6) { animation-delay: 2s; animation-duration: 5.8s; }
+@keyframes plant-sway {
+  0%, 100% { rotate: -1.5deg; }
+  50% { rotate: 1.5deg; }
+}
 
-@media (max-width: 1600px) {
-  .side-vine { display: none; }
+@media (max-width: 600px) {
+  .corner-plant { width: 78px; }
 }
 
 /* ---------- Responsive ---------- */
