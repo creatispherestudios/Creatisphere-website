@@ -11,12 +11,59 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=18">
+<link rel="stylesheet" href="css/style.css?v=19">
 </head>
 <body>
 
-<img class="corner-plant plant-left" src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?auto=format&fit=crop&w=500&q=80" alt="" aria-hidden="true">
-<img class="corner-plant plant-right" src="https://images.unsplash.com/photo-1598880940080-ff9a29891b85?auto=format&fit=crop&w=500&q=80" alt="" aria-hidden="true">
+<svg class="side-vine vine-left" viewBox="0 0 140 1400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path class="vine-stem" d="M70,-20 C30,80 110,180 70,280 C30,380 110,480 70,580 C30,680 110,780 70,880 C30,980 110,1080 70,1180 C30,1280 110,1380 70,1420"/>
+  <g class="vine-leaf-wrap" transform="translate(92,110)"><path class="vine-leaf" d="M0,0 C6,-16 26,-22 38,-9 C46,-20 64,-16 65,0 C64,16 46,20 38,9 C26,22 6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,350)"><path class="vine-leaf alt" d="M0,0 C-8,-20 -20,-26 -28,-22 C-26,-18 -30,-16 -34,-18 C-42,-24 -55,-20 -60,-8 C-56,-6 -58,-3 -60,0 C-58,3 -56,6 -60,8 C-55,20 -42,24 -34,18 C-30,16 -26,18 -28,22 C-20,26 -8,20 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(92,590)"><path class="vine-leaf" d="M0,0 C8,-20 20,-26 28,-22 C26,-18 30,-16 34,-18 C42,-24 55,-20 60,-8 C56,-6 58,-3 60,0 C58,3 56,6 60,8 C55,20 42,24 34,18 C30,16 26,18 28,22 C20,26 8,20 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,830)"><path class="vine-leaf alt" d="M0,0 C-6,-16 -26,-22 -38,-9 C-46,-20 -64,-16 -65,0 C-64,16 -46,20 -38,9 C-26,22 -6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(92,1070)"><path class="vine-leaf" d="M0,0 C6,-16 26,-22 38,-9 C46,-20 64,-16 65,0 C64,16 46,20 38,9 C26,22 6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,1310)"><path class="vine-leaf alt" d="M0,0 C-8,-20 -20,-26 -28,-22 C-26,-18 -30,-16 -34,-18 C-42,-24 -55,-20 -60,-8 C-56,-6 -58,-3 -60,0 C-58,3 -56,6 -60,8 C-55,20 -42,24 -34,18 C-30,16 -26,18 -28,22 C-20,26 -8,20 0,0 Z"/></g>
+  <g transform="translate(70,240)">
+    <ellipse class="vine-orbit-ring" rx="22" ry="7" transform="rotate(-20)"/>
+    <circle class="vine-orbit-ring" r="13"/>
+    <circle class="vine-orbit-dot" r="2.5"/>
+  </g>
+  <g transform="translate(70,700)">
+    <ellipse class="vine-orbit-ring" rx="20" ry="6" transform="rotate(15)"/>
+    <circle class="vine-orbit-ring" r="11"/>
+    <circle class="vine-orbit-dot" r="2.2"/>
+  </g>
+  <g transform="translate(70,1160)">
+    <ellipse class="vine-orbit-ring" rx="22" ry="7" transform="rotate(-15)"/>
+    <circle class="vine-orbit-ring" r="13"/>
+    <circle class="vine-orbit-dot" r="2.5"/>
+  </g>
+</svg>
+
+<svg class="side-vine vine-right" viewBox="0 0 140 1400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <path class="vine-stem" d="M70,-20 C30,80 110,180 70,280 C30,380 110,480 70,580 C30,680 110,780 70,880 C30,980 110,1080 70,1180 C30,1280 110,1380 70,1420"/>
+  <g class="vine-leaf-wrap" transform="translate(92,110)"><path class="vine-leaf" d="M0,0 C6,-16 26,-22 38,-9 C46,-20 64,-16 65,0 C64,16 46,20 38,9 C26,22 6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,350)"><path class="vine-leaf alt" d="M0,0 C-8,-20 -20,-26 -28,-22 C-26,-18 -30,-16 -34,-18 C-42,-24 -55,-20 -60,-8 C-56,-6 -58,-3 -60,0 C-58,3 -56,6 -60,8 C-55,20 -42,24 -34,18 C-30,16 -26,18 -28,22 C-20,26 -8,20 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(92,590)"><path class="vine-leaf" d="M0,0 C8,-20 20,-26 28,-22 C26,-18 30,-16 34,-18 C42,-24 55,-20 60,-8 C56,-6 58,-3 60,0 C58,3 56,6 60,8 C55,20 42,24 34,18 C30,16 26,18 28,22 C20,26 8,20 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,830)"><path class="vine-leaf alt" d="M0,0 C-6,-16 -26,-22 -38,-9 C-46,-20 -64,-16 -65,0 C-64,16 -46,20 -38,9 C-26,22 -6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(92,1070)"><path class="vine-leaf" d="M0,0 C6,-16 26,-22 38,-9 C46,-20 64,-16 65,0 C64,16 46,20 38,9 C26,22 6,16 0,0 Z"/></g>
+  <g class="vine-leaf-wrap" transform="translate(48,1310)"><path class="vine-leaf alt" d="M0,0 C-8,-20 -20,-26 -28,-22 C-26,-18 -30,-16 -34,-18 C-42,-24 -55,-20 -60,-8 C-56,-6 -58,-3 -60,0 C-58,3 -56,6 -60,8 C-55,20 -42,24 -34,18 C-30,16 -26,18 -28,22 C-20,26 -8,20 0,0 Z"/></g>
+  <g transform="translate(70,240)">
+    <ellipse class="vine-orbit-ring" rx="22" ry="7" transform="rotate(-20)"/>
+    <circle class="vine-orbit-ring" r="13"/>
+    <circle class="vine-orbit-dot" r="2.5"/>
+  </g>
+  <g transform="translate(70,700)">
+    <ellipse class="vine-orbit-ring" rx="20" ry="6" transform="rotate(15)"/>
+    <circle class="vine-orbit-ring" r="11"/>
+    <circle class="vine-orbit-dot" r="2.2"/>
+  </g>
+  <g transform="translate(70,1160)">
+    <ellipse class="vine-orbit-ring" rx="22" ry="7" transform="rotate(-15)"/>
+    <circle class="vine-orbit-ring" r="13"/>
+    <circle class="vine-orbit-dot" r="2.5"/>
+  </g>
+</svg>
 
 <!-- ===== Header ===== -->
 <header class="site-header">
