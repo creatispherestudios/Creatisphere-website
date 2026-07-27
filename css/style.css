@@ -1,6 +1,6 @@
 /* ============================================================
    CreatiSphere Studios — Shared Stylesheet
-   Used by every page: index.html, about.html, discover.html,
+   Used by every page: index.html, about.html, digital-magazine.html,
    community-cosmos.html, knowledge-nova.html, growth-galaxy.html,
    contact.html
    ============================================================ */
@@ -421,168 +421,6 @@ h1, h2, h3 {
 }
 .value-card.moss-accent .mark { color: var(--moss); }
 .value-card.moss-accent h4 { color: var(--sage); }
-
-/* ---------- Discover: search + filter toolbar ---------- */
-.discover-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 48px;
-}
-
-.search-input {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  padding: 14px 22px;
-  border-radius: 999px;
-  border: 1px solid var(--taupe);
-  background: var(--honey);
-  color: var(--espresso);
-  min-width: 260px;
-  outline: none;
-  transition: border-color var(--transition);
-}
-.search-input:focus { border-color: var(--gold); }
-
-.filter-pills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.filter-pill {
-  font-family: var(--font-label);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 999px;
-  border: 1px solid var(--taupe);
-  background: transparent;
-  color: var(--walnut);
-  cursor: pointer;
-  transition: background var(--transition), color var(--transition), border-color var(--transition);
-}
-
-.filter-pill:hover { border-color: var(--gold); color: var(--espresso); }
-
-.filter-pill.active {
-  background: var(--gold);
-  border-color: var(--gold);
-  color: var(--espresso);
-}
-
-.creator-card { cursor: pointer; }
-
-.no-results {
-  text-align: center;
-  color: var(--walnut);
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  padding: 40px 0;
-  display: none;
-}
-
-/* ---------- Profile modal ---------- */
-.profile-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  background: rgba(26, 20, 18, 0.75);
-  backdrop-filter: blur(4px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--transition);
-}
-
-.profile-modal.open { opacity: 1; pointer-events: auto; }
-
-.profile-card {
-  background: var(--honey);
-  border-radius: var(--radius);
-  max-width: 720px;
-  width: 100%;
-  max-height: 85vh;
-  overflow-y: auto;
-  position: relative;
-  transform: translateY(24px);
-  transition: transform var(--transition);
-}
-
-.profile-modal.open .profile-card { transform: translateY(0); }
-
-.profile-close {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(26, 20, 18, 0.85);
-  color: var(--honey);
-  font-size: 1.1rem;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.profile-photo {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  filter: sepia(0.3) saturate(1.3) hue-rotate(-8deg) brightness(0.95);
-  border-radius: var(--radius) var(--radius) 0 0;
-}
-
-.profile-body { padding: 32px 36px 36px; }
-
-.profile-body h3 { font-size: 1.8rem; margin-bottom: 4px; }
-
-.profile-body .role {
-  font-family: var(--font-label);
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-bottom: 4px;
-}
-
-.profile-body .loc { color: var(--walnut); font-size: 0.9rem; margin-bottom: 18px; }
-
-.profile-body .bio { color: var(--walnut); margin-bottom: 24px; line-height: 1.7; }
-
-.profile-section-label {
-  font-family: var(--font-label);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 10px;
-  display: block;
-}
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
-}
-
-.tag-chip {
-  font-family: var(--font-label);
-  font-size: 0.75rem;
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: var(--sand);
-  color: var(--espresso);
-}
 
 /* ---------- Community feed ---------- */
 .feed-list {
@@ -1490,9 +1328,6 @@ section { padding: 110px 0; }
   .hero-glow { opacity: 0.35; }
   .footer-flower { opacity: 0.4; width: 90px; }
   .mast-logo { width: 100px; height: 100px; }
-  .search-input { min-width: 0; width: 100%; }
-  .profile-body { padding: 24px 22px 28px; }
-  .profile-photo { height: 200px; }
   .feed-post { flex-direction: column; }
   .feed-date { margin-left: 0; }
 }
