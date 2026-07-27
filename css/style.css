@@ -1005,6 +1005,37 @@ h1, h2, h3 {
   .feature-profile { grid-template-columns: 1fr; }
 }
 
+/* ---------- Crisp orbit ring line-art (the actual visible rings, not blurry glow) ---------- */
+.orbit-decoration {
+  position: absolute;
+  width: 640px;
+  max-width: 80vw;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.orbit-decoration.pos-top-right { top: -8%; right: -10%; }
+.orbit-decoration.pos-bottom-left { bottom: -10%; left: -10%; }
+.orbit-decoration.pos-top-left { top: -6%; left: -8%; }
+.orbit-decoration.pos-bottom-right { bottom: -12%; right: -8%; }
+
+.orbit-decoration .ring-line {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1.2;
+}
+
+.orbit-decoration .ring-dot { fill: var(--gold); }
+
+.orbit-decoration .ring-a { animation: spin 90s linear infinite; transform-origin: 300px 300px; }
+.orbit-decoration .ring-b { animation: spin 130s linear infinite reverse; transform-origin: 300px 300px; }
+
+@media (max-width: 760px) {
+  .orbit-decoration { opacity: 0.3; width: 420px; }
+}
+
 /* ---------- Ambient section glow (extra orbit-ring decoration on dark sections) ---------- */
 .section-dark { position: relative; overflow: hidden; }
 .section-dark > .container { position: relative; z-index: 2; }
