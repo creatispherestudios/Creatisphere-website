@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=20">
+<link rel="stylesheet" href="css/style.css?v=21">
 </head>
 <body>
 
@@ -85,12 +85,17 @@
       </p>
 
       <div class="form-field">
-        <label for="full-name">Full Name</label>
+        <label for="full-name">Name (First and Last)</label>
         <input type="text" id="full-name" name="full-name" required>
       </div>
 
       <div class="form-field">
-        <label for="phone">Phone Number</label>
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday" required>
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Number</label>
         <input type="tel" id="phone" name="phone" required>
       </div>
 
@@ -100,18 +105,8 @@
       </div>
 
       <div class="form-field">
-        <label for="creativity-info">Tell Us About Your Creativity</label>
-        <textarea id="creativity-info" name="creativity-info" rows="4" placeholder="What do you create, and what kind of collaborations are you looking for?" required></textarea>
-      </div>
-
-      <div class="form-field">
-        <label for="birthday">Birthday</label>
-        <input type="date" id="birthday" name="birthday" required>
-      </div>
-
-      <div class="form-field">
-        <label for="instagram">Your Instagram</label>
-        <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/yourcreative" required>
+        <label for="inquiry">Inquiry</label>
+        <textarea id="inquiry" name="inquiry" rows="4" required></textarea>
       </div>
 
       <label class="form-checkbox">
