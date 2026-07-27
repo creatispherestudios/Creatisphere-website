@@ -15,6 +15,7 @@
   --taupe: #BDA99A;
   --gold: #D4AF37;
   --honey: #FCE9BE;
+  --card-dark: #241C19;
 
   --font-hero: 'Playfair Display', serif;
   --font-display: 'Cormorant Garamond', serif;
@@ -220,12 +221,12 @@ h1, h2, h3 {
 
 .hero-glow {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 260px;
-  max-width: 35vw;
+  bottom: -10%;
+  right: -5%;
+  width: 520px;
+  max-width: 60vw;
   mix-blend-mode: screen;
-  opacity: 0.75;
+  opacity: 0.9;
   pointer-events: none;
 }
 
@@ -933,12 +934,12 @@ h1, h2, h3 {
 }
 
 .cta-card {
-  background: var(--espresso);
+  background: var(--card-dark);
   color: var(--honey);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius);
   padding: 44px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 .cta-card .tag {
@@ -1010,12 +1011,12 @@ h1, h2, h3 {
 
 .section-glow {
   position: absolute;
-  top: -15%;
-  right: -12%;
-  width: 480px;
-  max-width: 55vw;
+  top: -20%;
+  right: -15%;
+  width: 720px;
+  max-width: 75vw;
   mix-blend-mode: screen;
-  opacity: 0.35;
+  opacity: 0.55;
   pointer-events: none;
   z-index: 1;
 }
@@ -1083,12 +1084,12 @@ section { padding: 110px 0; }
 }
 
 .pillar-card {
-  background: var(--espresso);
+  background: var(--card-dark);
   color: var(--honey);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius);
   padding: 36px 28px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
@@ -1258,11 +1259,11 @@ section { padding: 110px 0; }
 
 .footer-mark {
   position: absolute;
-  bottom: -120px;
-  right: -80px;
-  width: 380px;
+  bottom: -160px;
+  right: -100px;
+  width: 560px;
   mix-blend-mode: screen;
-  opacity: 0.5;
+  opacity: 0.65;
   pointer-events: none;
 }
 
