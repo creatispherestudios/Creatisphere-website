@@ -25,13 +25,12 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="consulting.html">Consulting</a>
+      <a href="consulting.html">Creatisphere Consulting</a>
       <a href="knowledge-nova.html">Knowledge Nova</a>
       <a href="growth-galaxy.html">Growth Galaxy</a>
       <a href="community-cosmos.html">Community Cosmos</a>
-      <a href="reviews.html">Reviews</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html#apply" class="btn btn-primary">Join Now</a>
+      <a href="contact.html#join" class="btn btn-primary">Join Now</a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -144,6 +143,61 @@
   </div>
 </section>
 
+<!-- ===== Join the Community form ===== -->
+<section id="join" class="section-light">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="justify-content:center;">Join the Community</p>
+      <h2>Join the Community</h2>
+      <p>Tell us about your business and we'll keep you in the loop on events, workshops, and the digital magazine.</p>
+    </div>
+
+    <form class="apply-form reveal" name="community-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="community-signup">
+      <p class="honeypot-field">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-field">
+        <label for="join-name">Name</label>
+        <input type="text" id="join-name" name="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="join-business">Business Name</label>
+        <input type="text" id="join-business" name="business-name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="join-email">Email</label>
+        <input type="email" id="join-email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="join-phone">Number</label>
+        <input type="tel" id="join-phone" name="phone" required>
+      </div>
+
+      <label class="form-checkbox">
+        <input type="checkbox" name="email-marketing-consent">
+        <span>I agree to receive marketing emails from Creatisphere Studios about events, workshops, and the digital magazine.</span>
+      </label>
+
+      <label class="form-checkbox">
+        <input type="checkbox" name="phone-marketing-consent">
+        <span>I agree to receive marketing text messages and calls from Creatisphere Studios (message and data rates may apply). Consent is not a condition of joining.</span>
+      </label>
+
+      <label class="form-checkbox">
+        <input type="checkbox" name="terms-consent" required>
+        <span>I agree to the <a href="terms-of-service.html" target="_blank">Terms of Service</a> and <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;">Submit</button>
+    </form>
+  </div>
+</section>
+
 <!-- ===== Footer ===== -->
 <footer class="site-footer">
   <img src="images/solar-flower-watermark.png" alt="" class="footer-mark">
@@ -193,11 +247,10 @@
       <div class="footer-col">
         <h5>Explore</h5>
         <a href="about.html">About</a>
-        <a href="consulting.html">Consulting</a>
+        <a href="consulting.html">Creatisphere Consulting</a>
         <a href="knowledge-nova.html">Knowledge Nova</a>
         <a href="growth-galaxy.html">Growth Galaxy</a>
         <a href="community-cosmos.html">Community Cosmos</a>
-        <a href="reviews.html">Reviews</a>
       </div>
       <div class="footer-col">
         <h5>Connect</h5>
