@@ -843,6 +843,157 @@ h1, h2, h3 {
   .feature-profile { grid-template-columns: 1fr; }
 }
 
+/* ---------- Magazine flip viewer (Growth Galaxy) ---------- */
+.magazine-cover {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+  aspect-ratio: 3 / 4;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.magazine-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-premium);
+}
+
+.magazine-cover:hover img { transform: scale(1.03); }
+
+.magazine-viewer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(10, 8, 7, 0.94);
+  align-items: center;
+  justify-content: center;
+}
+
+.magazine-viewer.open { display: flex; }
+
+.viewer-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  perspective: 1600px;
+  padding: 90px 100px;
+}
+
+.viewer-page-wrap {
+  transform-style: preserve-3d;
+  transition: transform 0.26s ease-in, opacity 0.26s ease-in;
+  opacity: 1;
+  transform: rotateY(0deg);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.viewer-page-wrap.flip-out {
+  transform: rotateY(90deg);
+  opacity: 0;
+}
+
+.viewer-page-wrap.flip-in {
+  animation: viewer-flip-in 0.26s ease-out;
+}
+
+@keyframes viewer-flip-in {
+  from { transform: rotateY(-90deg); opacity: 0; }
+  to { transform: rotateY(0deg); opacity: 1; }
+}
+
+.viewer-page {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 180px);
+  border-radius: 10px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.viewer-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--honey);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.viewer-close:hover { background: var(--gold); color: var(--espresso); border-color: var(--gold); }
+
+.viewer-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--honey);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  z-index: 2;
+}
+
+.viewer-nav:hover { background: var(--gold); color: var(--espresso); border-color: var(--gold); }
+.viewer-nav:disabled { opacity: 0.3; cursor: default; }
+.viewer-nav:disabled:hover { background: rgba(255, 255, 255, 0.06); color: var(--honey); border-color: rgba(255, 255, 255, 0.25); }
+
+.viewer-prev { left: 20px; }
+.viewer-next { right: 20px; }
+
+.viewer-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--sand);
+}
+
+.viewer-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--honey);
+  margin-right: 14px;
+}
+
+.viewer-count {
+  font-family: var(--font-label);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--taupe);
+}
+
+@media (max-width: 760px) {
+  .viewer-stage { padding: 70px 20px; }
+  .viewer-nav { width: 44px; height: 44px; font-size: 1.5rem; }
+  .viewer-prev { left: 8px; }
+  .viewer-next { right: 8px; }
+  .viewer-page { max-height: calc(100vh - 150px); }
+}
+
 /* ---------- Crisp orbit ring line-art (the actual visible rings, not blurry glow) ---------- */
 .orbit-decoration {
   position: absolute;
@@ -948,7 +1099,7 @@ section { padding: 110px 0; }
 /* ---------- Pillars ---------- */
 .pillars-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 28px;
 }
 
@@ -1212,7 +1363,6 @@ section { padding: 110px 0; }
 .pillars-grid .pillar-card:nth-child(2), .steps-grid .step-card:nth-child(2), .creator-scroller .creator-card:nth-child(2), .values-grid .value-card:nth-child(2), .ticket-grid .ticket-card:nth-child(2), .cta-grid .cta-card:nth-child(2) { transition-delay: 0.1s; }
 .pillars-grid .pillar-card:nth-child(3), .steps-grid .step-card:nth-child(3), .creator-scroller .creator-card:nth-child(3), .values-grid .value-card:nth-child(3), .ticket-grid .ticket-card:nth-child(3) { transition-delay: 0.2s; }
 .pillars-grid .pillar-card:nth-child(4), .creator-scroller .creator-card:nth-child(4), .values-grid .value-card:nth-child(4) { transition-delay: 0.3s; }
-.pillars-grid .pillar-card:nth-child(5) { transition-delay: 0.4s; }
 .creator-scroller .creator-card:nth-child(5), .values-grid .value-card:nth-child(5) { transition-delay: 0.4s; }
 .values-grid .value-card:nth-child(6) { transition-delay: 0.5s; }
 .values-grid .value-card:nth-child(7) { transition-delay: 0.6s; }
@@ -1290,7 +1440,7 @@ section { padding: 110px 0; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .pillars-grid { grid-template-columns: repeat(3, 1fr); }
+  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
   .steps-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .mission-strip { grid-template-columns: 1fr; gap: 24px; }
@@ -1301,9 +1451,10 @@ section { padding: 110px 0; }
 }
 
 /* Nav switches to the hamburger menu well before the grid breakpoints below,
-   since "Community Cosmos" + "Knowledge Nova" + the Join Now button need more
-   room than a typical laptop window provides even above 760px. */
-@media (max-width: 1400px) {
+   since "Creatisphere Consulting" + "Community Cosmos" + "Knowledge Nova" +
+   "Partners & Sponsors" + the Join Now button need more room than a typical
+   laptop window provides even above 760px. */
+@media (max-width: 1600px) {
   .nav-links {
     position: fixed;
     top: 68px;
