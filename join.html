@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Connected With a Specialist: Creatisphere Studios</title>
+<meta name="description" content="Choose what you need across Gravity, Nova, Galaxy, and Cosmos, then tell us about your business, project, or idea.">
+<link rel="icon" href="images/logo.png">
+<script>document.documentElement.className = 'js';</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css?v=29">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Creatisphere Studios logo">
+      <span>Creatisphere Studios</span>
+    </a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="gravity.html" class="nav-el">Gravity<span class="nav-mini">Creative Projects</span></a>
+      <a href="nova.html" class="nav-el">Nova<span class="nav-mini">Knowledge</span></a>
+      <a href="galaxy.html" class="nav-el">Galaxy<span class="nav-mini">Growth</span></a>
+      <a href="cosmos.html" class="nav-el">Cosmos<span class="nav-mini">Community</span></a>
+      <a href="about.html">About</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+      <a href="join.html" class="btn">Get connected</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Page hero ===== -->
+<section class="page-hero short grain">
+  <div class="stars"></div>
+  <svg class="orbit" viewBox="0 0 600 600" aria-hidden="true"><circle cx="300" cy="300" r="290"/><circle cx="300" cy="300" r="215"/></svg>
+  <div class="container reveal">
+    <p class="eyebrow">Join the creative universe</p>
+    <h1>Get connected with a specialist.</h1>
+    <p class="lead">Bring us the business, project, or idea you're working through. We'll bring our elements together and find where Creatisphere can plug in.</p>
+  </div>
+</section>
+
+<!-- ===== Service selector and intake form ===== -->
+<section class="section-light">
+  <div class="container">
+    <form class="consult" id="consult" name="consult-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="consult-request">
+      <input type="hidden" name="selection-summary" value="">
+      <p class="honeypot-field">
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+      </p>
+
+      <!-- Choose service groups -->
+      <div class="selector">
+        <p class="stage-intro">Select all that apply. You can choose services across all four elements.</p>
+        <div class="acc">
+
+          <div class="acc-item" data-element="gravity" data-name="Gravity" data-mini="Creative Projects">
+          <h2>
+            <button type="button" class="acc-head" id="head-gravity" aria-controls="panel-gravity" aria-expanded="true">
+              <span class="el-num">01</span>
+              <span><span class="el-name">Gravity</span><span class="el-mini">Creative Projects</span></span>
+              <span class="acc-desc">You have a creative project. We'll help manage the moving pieces.<span class="acc-count" hidden></span></span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="acc-panel" id="panel-gravity" role="region" aria-labelledby="head-gravity">
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="gravity-project-management" value="Gravity: Project Management" data-label="Project Management">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Project Management</span><span class="group-items">Creative project management &middot; Timeline &amp; deliverable management &middot; Budget, schedule &amp; vendor coordination &middot; Creative operations &middot; Launch coordination</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="gravity-production" value="Gravity: Production" data-label="Production">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Production</span><span class="group-items">Production management &amp; coordination &middot; Preproduction &middot; Postproduction coordination &middot; On set/project support &middot; Event production</span></span>
+            </label>
+          </div>
+        </div>
+          <div class="acc-item" data-element="nova" data-name="Nova" data-mini="Knowledge">
+          <h2>
+            <button type="button" class="acc-head" id="head-nova" aria-controls="panel-nova" aria-expanded="true">
+              <span class="el-num">02</span>
+              <span><span class="el-name">Nova</span><span class="el-mini">Knowledge</span></span>
+              <span class="acc-desc">We help creatives and organizations develop their knowledge, skills, and ideas.<span class="acc-count" hidden></span></span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="acc-panel" id="panel-nova" role="region" aria-labelledby="head-nova">
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="nova-consulting" value="Nova: Consulting" data-label="Consulting">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Consulting</span><span class="group-items">Creative business consulting &middot; Business model development &middot; Revenue stream planning &middot; Pricing &amp; service development &middot; Business process development &middot; Business launch planning &middot; Growth planning &middot; Market &amp; competitive research &middot; Audience development &middot; Partnership development &middot; Brand positioning &middot; Creative career development &middot; Project/business assessments</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="nova-workshops" value="Nova: Workshops" data-label="Workshops">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Workshops</span><span class="group-items">Creative entrepreneurship &middot; Creative business fundamentals &middot; Business development &middot; Project management &middot; Producing &middot; Marketing &middot; Branding &middot; Pricing &middot; Revenue development &middot; Industry education &middot; Professional development</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="nova-courses" value="Nova: Courses" data-label="Courses">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Courses</span><span class="group-items">Creative entrepreneurship courses &middot; Creative business courses &middot; Production courses &middot; Marketing courses &middot; Media courses &middot; Professional development courses &middot; Industry specific education</span></span>
+            </label>
+          </div>
+        </div>
+          <div class="acc-item" data-element="galaxy" data-name="Galaxy" data-mini="Growth">
+          <h2>
+            <button type="button" class="acc-head" id="head-galaxy" aria-controls="panel-galaxy" aria-expanded="true">
+              <span class="el-num">03</span>
+              <span><span class="el-name">Galaxy</span><span class="el-mini">Growth</span></span>
+              <span class="acc-desc">We create media and content that helps ideas, brands, and stories reach people.<span class="acc-count" hidden></span></span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="acc-panel" id="panel-galaxy" role="region" aria-labelledby="head-galaxy">
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="galaxy-media-production" value="Galaxy: Media Production" data-label="Media Production">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Media Production</span><span class="group-items">Video production &middot; Photography &middot; Film production &middot; Digital series &middot; Short form content &middot; Documentary content &middot; Podcast production &middot; Original programming &middot; Branded content</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="galaxy-content-development" value="Galaxy: Content Development" data-label="Content Development">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Content Development</span><span class="group-items">Content strategy &middot; Content planning &middot; Story development &middot; Creative concepts &middot; Campaign concepts &middot; Editorial development &middot; Social content &middot; Digital storytelling</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="galaxy-marketing" value="Galaxy: Marketing" data-label="Marketing">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Marketing</span><span class="group-items">Creative marketing &middot; Social media marketing &middot; Campaign development &middot; Audience development &middot; Digital marketing &middot; Brand campaigns &middot; Launch campaigns &middot; Promotional campaigns &middot; Email/content campaigns &middot; Marketing partnerships</span></span>
+            </label>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="galaxy-media-support" value="Galaxy: Media Support" data-label="Media Support">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Media Support</span><span class="group-items">Content calendars &middot; Campaign coordination &middot; Distribution planning &middot; Media partnerships &middot; Influencer/creator collaborations &middot; Promotional strategy &middot; Cross platform content</span></span>
+            </label>
+          </div>
+        </div>
+          <div class="acc-item" data-element="cosmos" data-name="Cosmos" data-mini="Community">
+          <h2>
+            <button type="button" class="acc-head" id="head-cosmos" aria-controls="panel-cosmos" aria-expanded="true">
+              <span class="el-num">04</span>
+              <span><span class="el-name">Cosmos</span><span class="el-mini">Community</span></span>
+              <span class="acc-desc">We create spaces and experiences that bring people, ideas, and opportunities together.<span class="acc-count" hidden></span></span>
+              <span class="acc-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="acc-panel" id="panel-cosmos" role="region" aria-labelledby="head-cosmos">
+            <p class="eyebrow panel-label">Attend</p>
+            <dl class="attend-list">
+              <div><dt>Events</dt><dd>Panels &middot; Showcases &middot; Popups &middot; Workshop events</dd></div>
+              <div><dt>Networking</dt><dd>Networking events &middot; Creative mixers &middot; Industry meetups &middot; Creative socials</dd></div>
+              <div><dt>Community</dt><dd>Community gatherings &middot; Coworking experiences &middot; Youth programs &amp; events</dd></div>
+            </dl>
+            <a class="text-link" href="https://www.eventbrite.com/o/creatisphere-studios-121575023398" target="_blank" rel="noopener">See upcoming events on Eventbrite</a>
+            <p class="eyebrow panel-label">Work with us</p>
+            <label class="group-option">
+              <input type="checkbox" name="services[]" id="cosmos-partner" value="Cosmos: Partner with us on an event or community program" data-label="Partner with us on an event or community program">
+              <span class="group-check" aria-hidden="true"></span>
+              <span><span class="group-name">Partner with us on an event or community program</span></span>
+            </label>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Running summary -->
+      <aside class="summary" aria-live="polite">
+        <h2>Your selections</h2>
+        <p class="summary-empty">Nothing selected yet. Open an element to choose.</p>
+        <div class="summary-list"></div>
+        <div class="summary-actions">
+          <a href="#intake" class="btn" data-continue>Continue to the form</a>
+        </div>
+      </aside>
+
+      <!-- One contact form, shown once something is selected -->
+      <div class="intake" id="intake" data-intake>
+
+        <fieldset class="step">
+          <legend>About you</legend>
+          <div class="field-pair">
+            <div class="field">
+              <label for="full-name">Name <small>(first and last)</small></label>
+              <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="organization">Business / Organization <small>(optional)</small></label>
+              <input type="text" id="organization" name="organization" autocomplete="organization">
+            </div>
+            <div class="field">
+              <label for="website">Website / Social media</label>
+              <input type="text" id="website" name="website" autocomplete="url" required>
+            </div>
+            <div class="field">
+              <label for="birthday">Date of birth</label>
+              <input type="date" id="birthday" name="birthday" autocomplete="bday" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Follow up questions. Each one only shows when a matching group is selected. -->
+        <fieldset class="step" data-show-for="gravity-project-management gravity-production">
+          <legend><span class="eyebrow step-count">Gravity &middot; Creative Projects</span>What kind of project is it?</legend>
+          <p class="step-hint">Choose any that fit, or skip this one.</p>
+          <div class="choices">
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Music">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Music</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Film/TV">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Film/TV</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Arts &amp; cultural">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Arts &amp; cultural</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Artist project">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Artist project</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Partnership project">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Partnership project</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Business or organization">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Business or organization</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="project-type[]" value="Something else" data-other-toggle>
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Something else</span>
+              </label>
+          </div>
+          <div class="field" data-other-field>
+            <label for="project-type-other">Something else</label>
+            <input type="text" id="project-type-other" name="project-type-other" maxlength="120">
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-show-for="nova-consulting">
+          <legend><span class="eyebrow step-count">Nova &middot; Knowledge &middot; Consulting</span>Where is your business right now?</legend>
+          <p class="step-hint">Choose any that fit, or skip this one.</p>
+          <div class="choices">
+              <label class="group-option">
+                <input type="checkbox" name="business-stage[]" value="Just starting">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Just starting</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="business-stage[]" value="Established">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Established</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="business-stage[]" value="Ready to scale">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Ready to scale</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="business-stage[]" value="Still an idea">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Still an idea</span>
+              </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-show-for="nova-workshops nova-courses">
+          <legend><span class="eyebrow step-count">Nova &middot; Knowledge &middot; Workshops and courses</span>Who is the learning for?</legend>
+          <p class="step-hint">Choose any that fit, or skip this one.</p>
+          <div class="choices">
+              <label class="group-option">
+                <input type="checkbox" name="learning-for[]" value="Just me">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Just me</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="learning-for[]" value="My team or organization">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">My team or organization</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="learning-for[]" value="A community or group">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">A community or group</span>
+              </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-show-for="galaxy-media-production galaxy-content-development galaxy-marketing galaxy-media-support">
+          <legend><span class="eyebrow step-count">Galaxy &middot; Growth</span>What do you want to reach people?</legend>
+          <p class="step-hint">Choose any that fit, or skip this one.</p>
+          <div class="choices">
+              <label class="group-option">
+                <input type="checkbox" name="galaxy-focus[]" value="A brand or business">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">A brand or business</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="galaxy-focus[]" value="An artist or creative project">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">An artist or creative project</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="galaxy-focus[]" value="An event or launch">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">An event or launch</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="galaxy-focus[]" value="A story or series">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">A story or series</span>
+              </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-show-for="cosmos-partner">
+          <legend><span class="eyebrow step-count">Cosmos &middot; Community</span>What do you have in mind?</legend>
+          <p class="step-hint">Choose any that fit, or skip this one.</p>
+          <div class="choices">
+              <label class="group-option">
+                <input type="checkbox" name="cosmos-plan[]" value="An event">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">An event</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="cosmos-plan[]" value="A community program">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">A community program</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="cosmos-plan[]" value="A sponsorship or partnership">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">A sponsorship or partnership</span>
+              </label>
+              <label class="group-option">
+                <input type="checkbox" name="cosmos-plan[]" value="Not sure yet">
+                <span class="group-check" aria-hidden="true"></span>
+                <span class="group-name">Not sure yet</span>
+              </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step">
+          <legend>Tell us about what you're building</legend>
+          <p class="step-hint">Give us a glimpse into your world. What are you building, where are you headed, and what makes your business, project, or idea yours?</p>
+          <div class="field">
+            <textarea id="about" name="about" rows="8" aria-label="Tell us about what you're building" required></textarea>
+          </div>
+        </fieldset>
+
+        <div class="intake-end">
+          <label class="form-checkbox">
+            <input type="checkbox" name="age-confirm" required>
+            <span>I confirm that I am 18 years of age or older.</span>
+          </label>
+          <label class="form-checkbox">
+            <input type="checkbox" name="policy-consent" required>
+            <span>I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and <a href="terms-of-service.html" target="_blank">Terms of Service</a>, and consent to receive emails from Creatisphere Studios.</span>
+          </label>
+          <label class="form-checkbox">
+            <input type="checkbox" name="sms-consent">
+            <span>I agree to receive text messages from Creatisphere Studios (message and data rates may apply). Consent is not a condition of submitting.</span>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">Launch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone only: keeps the way forward in view while choosing -->
+      <div class="select-bar" data-bar hidden>
+        <span data-bar-count></span>
+        <a href="#intake" class="btn" data-continue>Continue</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer grain">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Creatisphere Studios logo">
+        <p>A creative enterprise for businesses and creatives, connecting project management, consulting, education, media, marketing, and community. Atlanta, GA.</p>
+      </div>
+      <div class="footer-col">
+        <h2>About</h2>
+        <a href="about.html">About the studio</a>
+        <a href="partners.html">Partners and sponsors</a>
+        <h2 class="footer-sub">Elements</h2>
+        <a href="gravity.html" class="footer-el"><span>Gravity</span><small>Creative Projects</small></a>
+        <a href="nova.html" class="footer-el"><span>Nova</span><small>Knowledge</small></a>
+        <a href="galaxy.html" class="footer-el"><span>Galaxy</span><small>Growth</small></a>
+        <a href="cosmos.html" class="footer-el"><span>Cosmos</span><small>Community</small></a>
+      </div>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <a href="contact.html#message">Send a message</a>
+        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">Email us</a>
+        <a href="contact.html#join">Join the community list</a>
+      </div>
+      <div class="footer-col">
+        <h2>Connect</h2>
+        <a href="https://www.instagram.com/creatispherestudios/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@creatispherestudios" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.linkedin.com/in/creatisphere-studios-154155412/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.threads.com/@creatispherestudios" target="_blank" rel="noopener">Threads</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Creatisphere Studios</span>
+      <span class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=29"></script>
+</body>
+</html>

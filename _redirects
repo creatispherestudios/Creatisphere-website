@@ -1,0 +1,11 @@
+# Retired page addresses. The ! forces the redirect even though a fallback stub file exists.
+/consulting.html        /nova.html     301!
+/consulting             /nova.html     301!
+/knowledge-nova.html    /nova.html     301!
+/knowledge-nova         /nova.html     301!
+/growth-galaxy.html     /galaxy.html   301!
+/growth-galaxy          /galaxy.html   301!
+/digital-magazine.html  /galaxy.html   301!
+/digital-magazine       /galaxy.html   301!
+/community-cosmos.html  /cosmos.html   301!
+/community-cosmos       /cosmos.html   301!

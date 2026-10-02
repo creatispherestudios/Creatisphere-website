@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partners &amp; Sponsors: Creatisphere Studios</title>
-<meta name="description" content="Sponsor Work and Orbit, Creatisphere's monthly creative coworking session, and get recurring visibility in front of a consistent, engaged creative audience.">
+<title>Partners and Sponsors: Creatisphere Studios</title>
+<meta name="description" content="Partner with Creatisphere Studios on events and programs. Three tiers: Comet, Orbit, and Solar.">
 <link rel="icon" href="images/logo.png">
+<script>document.documentElement.className = 'js';</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=28">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body>
 
@@ -20,199 +21,145 @@
   <div class="nav-wrap">
     <a href="index.html" class="brand">
       <img src="images/logo.png" alt="Creatisphere Studios logo">
-      <span>Creatisphere</span>
+      <span>Creatisphere Studios</span>
     </a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="gravity.html" class="nav-el">Gravity<span class="nav-mini">Creative Projects</span></a>
+      <a href="nova.html" class="nav-el">Nova<span class="nav-mini">Knowledge</span></a>
+      <a href="galaxy.html" class="nav-el">Galaxy<span class="nav-mini">Growth</span></a>
+      <a href="cosmos.html" class="nav-el">Cosmos<span class="nav-mini">Community</span></a>
       <a href="about.html">About</a>
-      <a href="consulting.html">Creatisphere Consulting</a>
-      <a href="knowledge-nova.html">Knowledge Nova</a>
-      <a href="growth-galaxy.html">Growth Galaxy</a>
-      <a href="community-cosmos.html">Community Cosmos</a>
-      <a href="partners.html">Partners &amp; Sponsors</a>
+      <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html#join" class="btn btn-primary">Join Now</a>
+      <a href="join.html" class="btn">Get connected</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <!-- ===== Page hero ===== -->
-<section class="page-hero">
-  <img src="images/solar-flower-watermark.png" alt="" class="hero-glow">
-  <svg class="orbit-decoration pos-top-right" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle class="ring-line" cx="300" cy="300" r="260" opacity="0.6"/>
-    <circle class="ring-line" cx="300" cy="300" r="180" opacity="0.4"/>
-    <g class="ring-b" style="transform-origin:300px 300px;">
-      <ellipse class="ring-line" cx="300" cy="300" rx="260" ry="75" transform="rotate(-18 300 300)" opacity="0.7"/>
-    </g>
-    <g class="ring-a" style="transform-origin:300px 300px;">
-      <circle class="ring-dot" cx="560" cy="300" r="5"/>
-    </g>
-    <g class="ring-b" style="transform-origin:300px 300px;">
-      <circle class="ring-dot" cx="300" cy="150" r="4"/>
-    </g>
-  </svg>
+<section class="page-hero grain">
+  <div class="stars"></div>
+  <svg class="orbit" viewBox="0 0 600 600" aria-hidden="true"><circle cx="300" cy="300" r="290"/><circle cx="300" cy="300" r="215"/></svg>
   <div class="container reveal">
-    <p class="eyebrow" style="justify-content:center;">
-      <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-      Partners &amp; Sponsors
-    </p>
-    <h1>Work and Orbit sponsorship.</h1>
-    <p>A creative work session for unfinished work. Sponsors help make each session possible and get recurring visibility in front of a consistent, engaged creative audience.</p>
+    <p class="eyebrow">Partners</p>
+    <h1>Partners and sponsors.</h1>
+    <p class="lead">Sponsors make our events and programs possible and get recurring visibility in front of a consistent, engaged creative audience.</p>
   </div>
 </section>
 
-<!-- ===== Intro ===== -->
+<!-- ===== Tiers ===== -->
 <section class="section-light">
-  <div class="container" style="max-width:760px;text-align:center;">
-    <p style="color:var(--walnut);font-size:1.05rem;">Work and Orbit is a monthly creative coworking session where local creatives gather to work on unfinished projects, exchange skills, and support one another. These three tiers are built around in-kind contributions, goods, services, or space donated at an estimated dollar value, rather than cash.</p>
-  </div>
-</section>
-
-<!-- ===== Sponsorship tiers ===== -->
-<section class="section-sand">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow" style="justify-content:center;">Sponsorship Tiers</p>
-      <h2>Three ways to partner with us.</h2>
+    <div class="section-top two-col reveal">
+      <p class="eyebrow">Three tiers</p>
+      <p class="lead">These tiers are based on in kind contributions: goods, services, or space donated at an estimated dollar value, rather than cash.</p>
     </div>
-    <div class="ticket-grid stagger-group">
-      <div class="ticket-card">
-        <span class="tag">$100–$249 In-Kind Value</span>
-        <h3>Comet Partner</h3>
-        <p style="margin-bottom:14px;">A quick, bright contribution.</p>
-        <ul style="margin-bottom:20px;flex-grow:1;">
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Listed as official partner on website &amp; event materials</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Logo on sponsor signage at event</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Shoutout in group social media post</li>
+    <div class="tiers reveal">
+      <div class="tier">
+        <h2 class="el-name">Comet</h2>
+        <p class="el-mini">Community Support</p>
+        <p class="tier-value">$100 to $249 in kind value</p>
+        <p class="el-tagline">A quick, bright contribution.</p>
+        <ul>
+          <li>Listed as official partner on website and event materials</li>
+          <li>Logo on sponsor signage at event</li>
+          <li>Shoutout in group social media post</li>
         </ul>
-        <div class="ticket-footer">
-          <a href="mailto:creatispherestudios@gmail.com?subject=Work%20and%20Orbit%20Sponsorship%20Inquiry%20-%20Comet%20Partner" class="btn btn-primary">Become a Sponsor</a>
-        </div>
       </div>
-      <div class="ticket-card">
-        <span class="tag">$250–$499 In-Kind Value</span>
-        <h3>Orbit Partner</h3>
-        <p style="margin-bottom:14px;">A steady presence in our orbit.</p>
-        <ul style="margin-bottom:20px;flex-grow:1;">
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Everything in Comet Partner</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Dedicated individual social media post</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Logo on event flyer &amp; posters</li>
+      <div class="tier">
+        <h2 class="el-name">Orbit</h2>
+        <p class="el-mini">Event/Program Partner</p>
+        <p class="tier-value">$250 to $499 in kind value</p>
+        <p class="el-tagline">A steady presence in our orbit.</p>
+        <ul>
+          <li>Everything in Comet</li>
+          <li>Dedicated individual social media post</li>
+          <li>Logo on event flyer and posters</li>
         </ul>
-        <div class="ticket-footer">
-          <a href="mailto:creatispherestudios@gmail.com?subject=Work%20and%20Orbit%20Sponsorship%20Inquiry%20-%20Orbit%20Partner" class="btn btn-primary">Become a Sponsor</a>
-        </div>
       </div>
-      <div class="ticket-card">
-        <span class="tag">$500+ In-Kind Value</span>
-        <h3>Solar Partner</h3>
-        <p style="margin-bottom:14px;">The center of it all.</p>
-        <ul style="margin-bottom:20px;flex-grow:1;">
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Everything in Orbit Partner</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Logo on event banner &amp; step-and-repeat</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Verbal recognition during the session</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ "Work and Orbit presented by [Sponsor]" branding</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ Table or booth space at the event</li>
-          <li style="margin-bottom:10px;color:var(--walnut);font-size:0.92rem;">✓ First right of renewal for future sessions</li>
+      <div class="tier">
+        <h2 class="el-name">Solar</h2>
+        <p class="el-mini">Signature/Strategic Partner</p>
+        <p class="tier-value">$500 and up in kind value</p>
+        <p class="el-tagline">The center of it all.</p>
+        <ul>
+          <li>Everything in Orbit</li>
+          <li>Logo on event banner and step and repeat</li>
+          <li>Verbal recognition during the event</li>
+          <li>"Presented by [Sponsor]" branding</li>
+          <li>Table or booth space at the event</li>
+          <li>First right of renewal for future events</li>
         </ul>
-        <div class="ticket-footer">
-          <a href="mailto:creatispherestudios@gmail.com?subject=Work%20and%20Orbit%20Sponsorship%20Inquiry%20-%20Solar%20Partner" class="btn btn-primary">Become a Sponsor</a>
+      </div>
+    </div>
+    <div class="group-list after-list">
+      <div class="group-row reveal">
+        <div>
+          <p class="eyebrow">Open for sponsorship now</p>
+          <h2 class="group-name">Work and Orbit</h2>
+        </div>
+        <div>
+          <p>A monthly creative coworking session where local creatives gather to work on unfinished projects, exchange skills, and support one another. Every second Saturday.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== Final CTA ===== -->
-<section class="section-light cta-band">
-  <div class="container reveal">
-    <h2>Interested in sponsoring?</h2>
-    <p style="max-width:520px;margin:0 auto 32px;color:var(--walnut);">Reach out to discuss a package that fits your goals.</p>
-    <div class="hero-actions">
-      <a href="mailto:creatispherestudios@gmail.com?subject=Work%20and%20Orbit%20Sponsorship%20Inquiry" class="btn btn-primary">Email Us</a>
-      <a href="contact.html" class="btn btn-secondary on-light">Contact Page</a>
+<!-- ===== Closing ===== -->
+<section class="section-sand closing">
+  <span class="ring" aria-hidden="true"></span>
+  <div class="container closing-grid reveal">
+    <h2 class="statement">Interested in partnering?</h2>
+    <div>
+      <p>Reach out to discuss a package that fits your goals.</p>
+      <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Partnership%20Inquiry" class="btn">Email us</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <img src="images/solar-flower-watermark.png" alt="" class="footer-mark">
-  <svg class="solar-flower footer-flower" viewBox="0 0 240 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <defs>
-      <radialGradient id="sfSphere11" cx="35%" cy="32%" r="75%">
-        <stop offset="0%" stop-color="#F8E7AE"/>
-        <stop offset="45%" stop-color="#D4AF37"/>
-        <stop offset="100%" stop-color="#8A621F"/>
-      </radialGradient>
-      <linearGradient id="sfLeaf11" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#F3D998"/>
-        <stop offset="100%" stop-color="#9C6B1F"/>
-      </linearGradient>
-    </defs>
-
-    <path d="M120 415 C117 320 123 270 120 205" fill="none" stroke="#A67C2E" stroke-width="4" stroke-linecap="round"/>
-
-    <path fill="url(#sfLeaf11)" d="M120 300 C88 292 55 302 34 333 C66 322 98 320 120 308 Z"/>
-    <path fill="url(#sfLeaf11)" d="M120 300 C152 292 185 302 206 333 C174 322 142 320 120 308 Z"/>
-    <path fill="url(#sfLeaf11)" d="M120 352 C97 346 70 356 53 383 C79 373 106 371 120 361 Z"/>
-    <path fill="url(#sfLeaf11)" d="M120 352 C143 346 170 356 187 383 C161 373 134 371 120 361 Z"/>
-
-    <circle cx="50" cy="335" r="4" fill="var(--gold)"/>
-    <circle cx="190" cy="335" r="3.5" fill="var(--gold)"/>
-
-    <g transform="translate(120,110)">
-      <g class="spin-slower" style="transform-origin:0px 0px;">
-        <ellipse class="orbit-ring" rx="84" ry="26" transform="rotate(-18)" opacity="0.6"/>
-      </g>
-      <circle r="55" fill="url(#sfSphere11)"/>
-      <g class="spin-slower" style="transform-origin:0px 0px;">
-        <path class="orbit-ring" d="M 54,-19.9 A 84 26 0 0 1 54,19.9" transform="rotate(-18)" fill="none"/>
-      </g>
-      <g class="spin-slow" style="transform-origin:0px 0px;">
-        <circle class="orbit-dot" cx="80" cy="-14" r="5"/>
-        <circle class="orbit-dot" cx="98" cy="-2" r="3"/>
-      </g>
-    </g>
-  </svg>
+<footer class="site-footer grain">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="images/logo.png" alt="Creatisphere Studios logo">
-        <p>A creative business consulting practice based in Atlanta, helping creatives build real, lasting businesses through consulting, workshops, a digital magazine, and a community built to support them.</p>
+        <p>A creative enterprise for businesses and creatives, connecting project management, consulting, education, media, marketing, and community. Atlanta, GA.</p>
       </div>
       <div class="footer-col">
-        <h5>Explore</h5>
-        <a href="about.html">About</a>
-        <a href="consulting.html">Creatisphere Consulting</a>
-        <a href="knowledge-nova.html">Knowledge Nova</a>
-        <a href="growth-galaxy.html">Growth Galaxy</a>
-        <a href="community-cosmos.html">Community Cosmos</a>
-        <a href="partners.html">Partners &amp; Sponsors</a>
+        <h2>About</h2>
+        <a href="about.html">About the studio</a>
+        <a href="partners.html">Partners and sponsors</a>
+        <h2 class="footer-sub">Elements</h2>
+        <a href="gravity.html" class="footer-el"><span>Gravity</span><small>Creative Projects</small></a>
+        <a href="nova.html" class="footer-el"><span>Nova</span><small>Knowledge</small></a>
+        <a href="galaxy.html" class="footer-el"><span>Galaxy</span><small>Growth</small></a>
+        <a href="cosmos.html" class="footer-el"><span>Cosmos</span><small>Community</small></a>
       </div>
       <div class="footer-col">
-        <h5>Connect</h5>
+        <h2>Contact</h2>
+        <a href="contact.html#message">Send a message</a>
+        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">Email us</a>
+        <a href="contact.html#join">Join the community list</a>
+      </div>
+      <div class="footer-col">
+        <h2>Connect</h2>
         <a href="https://www.instagram.com/creatispherestudios/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@creatispherestudios" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.linkedin.com/in/creatisphere-studios-154155412/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.threads.com/@creatispherestudios" target="_blank" rel="noopener">Threads</a>
       </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">creatispherestudios@gmail.com</a>
-        <a href="contact.html">Contact Page</a>
-      </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Creatisphere Studios. Your Creative Universe.
-    <div class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></div>
+      <span>&copy; 2026 Creatisphere Studios</span>
+      <span class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=29"></script>
 </body>
 </html>

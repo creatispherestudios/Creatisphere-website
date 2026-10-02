@@ -6,12 +6,13 @@
 <title>Terms of Service: Creatisphere Studios</title>
 <meta name="description" content="The terms that govern use of the Creatisphere Studios website and community.">
 <link rel="icon" href="images/logo.png">
+<script>document.documentElement.className = 'js';</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=28">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body>
 
@@ -20,37 +21,37 @@
   <div class="nav-wrap">
     <a href="index.html" class="brand">
       <img src="images/logo.png" alt="Creatisphere Studios logo">
-      <span>Creatisphere</span>
+      <span>Creatisphere Studios</span>
     </a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="gravity.html" class="nav-el">Gravity<span class="nav-mini">Creative Projects</span></a>
+      <a href="nova.html" class="nav-el">Nova<span class="nav-mini">Knowledge</span></a>
+      <a href="galaxy.html" class="nav-el">Galaxy<span class="nav-mini">Growth</span></a>
+      <a href="cosmos.html" class="nav-el">Cosmos<span class="nav-mini">Community</span></a>
       <a href="about.html">About</a>
-      <a href="consulting.html">Creatisphere Consulting</a>
-      <a href="knowledge-nova.html">Knowledge Nova</a>
-      <a href="growth-galaxy.html">Growth Galaxy</a>
-      <a href="community-cosmos.html">Community Cosmos</a>
-      <a href="partners.html">Partners &amp; Sponsors</a>
+      <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html#join" class="btn btn-primary">Join Now</a>
+      <a href="join.html" class="btn">Get connected</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <!-- ===== Page hero ===== -->
-<section class="page-hero" style="min-height:35vh;">
+<section class="page-hero short grain">
+  <div class="stars"></div>
   <div class="container reveal">
-    <p class="eyebrow" style="justify-content:center;">Legal</p>
+    <p class="eyebrow">Legal</p>
     <h1>Terms of Service</h1>
   </div>
 </section>
 
-<!-- ===== Terms content ===== -->
+<!-- ===== Content ===== -->
 <section class="section-light">
   <div class="container">
-    <div class="legal-content reveal">
+    <div class="legal-content">
       <span class="updated">Last updated: July 25, 2026</span>
 
       <h2>Agreement to Terms</h2>
@@ -69,10 +70,10 @@
       <p>By participating in the Creatisphere community, you agree to treat other members professionally and respectfully, and not to misuse contact information you obtain through the community for unrelated solicitation, harassment, or spam.</p>
 
       <h2>Content You Submit</h2>
-      <p>You retain ownership of any bio, business links, or other content you submit to us. By submitting it, you grant Creatisphere a non-exclusive license to display that content on our website and community channels for the purpose of operating our consulting practice and community.</p>
+      <p>You retain ownership of any bio, business links, or other content you submit to us. By submitting it, you grant Creatisphere a nonexclusive license to display that content on our website and community channels for the purpose of operating our consulting practice and community.</p>
 
-      <h2>Third-Party Services</h2>
-      <p>Our site links to third-party platforms including Instagram, TikTok, LinkedIn, Threads, and Eventbrite for events. We are not responsible for the content, terms, or practices of those third-party services.</p>
+      <h2>Third Party Services</h2>
+      <p>Our site links to third party platforms including Instagram, TikTok, LinkedIn, Threads, and Eventbrite for events. We are not responsible for the content, terms, or practices of those third party services.</p>
 
       <h2>Disclaimer and Limitation of Liability</h2>
       <p>Creatisphere is not responsible for the outcome of any consulting engagement, introduction, or interaction between members that occurs as a result of using our services. The site and community are provided "as is," and to the fullest extent permitted by law, Creatisphere disclaims liability for any damages arising from your use of the site or participation in the community.</p>
@@ -90,43 +91,44 @@
 </section>
 
 <!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <img src="images/solar-flower-watermark.png" alt="" class="footer-mark">
+<footer class="site-footer grain">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="images/logo.png" alt="Creatisphere Studios logo">
-        <p>A creative business consulting practice based in Atlanta, helping creatives build real, lasting businesses through consulting, workshops, a digital magazine, and a community built to support them.</p>
+        <p>A creative enterprise for businesses and creatives, connecting project management, consulting, education, media, marketing, and community. Atlanta, GA.</p>
       </div>
       <div class="footer-col">
-        <h5>Explore</h5>
-        <a href="about.html">About</a>
-        <a href="consulting.html">Creatisphere Consulting</a>
-        <a href="knowledge-nova.html">Knowledge Nova</a>
-        <a href="growth-galaxy.html">Growth Galaxy</a>
-        <a href="community-cosmos.html">Community Cosmos</a>
-        <a href="partners.html">Partners &amp; Sponsors</a>
+        <h2>About</h2>
+        <a href="about.html">About the studio</a>
+        <a href="partners.html">Partners and sponsors</a>
+        <h2 class="footer-sub">Elements</h2>
+        <a href="gravity.html" class="footer-el"><span>Gravity</span><small>Creative Projects</small></a>
+        <a href="nova.html" class="footer-el"><span>Nova</span><small>Knowledge</small></a>
+        <a href="galaxy.html" class="footer-el"><span>Galaxy</span><small>Growth</small></a>
+        <a href="cosmos.html" class="footer-el"><span>Cosmos</span><small>Community</small></a>
       </div>
       <div class="footer-col">
-        <h5>Connect</h5>
+        <h2>Contact</h2>
+        <a href="contact.html#message">Send a message</a>
+        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">Email us</a>
+        <a href="contact.html#join">Join the community list</a>
+      </div>
+      <div class="footer-col">
+        <h2>Connect</h2>
         <a href="https://www.instagram.com/creatispherestudios/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@creatispherestudios" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.linkedin.com/in/creatisphere-studios-154155412/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.threads.com/@creatispherestudios" target="_blank" rel="noopener">Threads</a>
       </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">creatispherestudios@gmail.com</a>
-        <a href="contact.html">Contact Page</a>
-      </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Creatisphere Studios. Your Creative Universe.
-      <div class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></div>
+      <span>&copy; 2026 Creatisphere Studios</span>
+      <span class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=29"></script>
 </body>
 </html>

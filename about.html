@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Creatisphere Studios</title>
-<meta name="description" content="Creatisphere is a creative business consulting practice with a community built around it. Read our story, our mission, and the values behind the solar system.">
+<title>About: Creatisphere Studios</title>
+<meta name="description" content="Creatisphere Studios is a creative enterprise in Atlanta, founded by Destiny. Read the founder's note, our mission, and our values.">
 <link rel="icon" href="images/logo.png">
+<script>document.documentElement.className = 'js';</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css?v=28">
+<link rel="stylesheet" href="css/style.css?v=29">
 </head>
 <body>
 
@@ -20,258 +21,155 @@
   <div class="nav-wrap">
     <a href="index.html" class="brand">
       <img src="images/logo.png" alt="Creatisphere Studios logo">
-      <span>Creatisphere</span>
+      <span>Creatisphere Studios</span>
     </a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
+    <nav class="nav-links" id="site-nav" aria-label="Main">
+      <a href="gravity.html" class="nav-el">Gravity<span class="nav-mini">Creative Projects</span></a>
+      <a href="nova.html" class="nav-el">Nova<span class="nav-mini">Knowledge</span></a>
+      <a href="galaxy.html" class="nav-el">Galaxy<span class="nav-mini">Growth</span></a>
+      <a href="cosmos.html" class="nav-el">Cosmos<span class="nav-mini">Community</span></a>
       <a href="about.html">About</a>
-      <a href="consulting.html">Creatisphere Consulting</a>
-      <a href="knowledge-nova.html">Knowledge Nova</a>
-      <a href="growth-galaxy.html">Growth Galaxy</a>
-      <a href="community-cosmos.html">Community Cosmos</a>
-      <a href="partners.html">Partners &amp; Sponsors</a>
+      <a href="partners.html">Partners</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html#join" class="btn btn-primary">Join Now</a>
+      <a href="join.html" class="btn">Get connected</a>
     </nav>
-    <button class="nav-toggle" aria-label="Toggle menu">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-controls="site-nav" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <!-- ===== Page hero ===== -->
-<section class="page-hero">
-  <img src="images/solar-flower-watermark.png" alt="" class="hero-glow">
-  <svg class="orbit-decoration pos-top-right" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle class="ring-line" cx="300" cy="300" r="260" opacity="0.6"/>
-    <circle class="ring-line" cx="300" cy="300" r="180" opacity="0.4"/>
-    <g class="ring-b" style="transform-origin:300px 300px;">
-      <ellipse class="ring-line" cx="300" cy="300" rx="260" ry="75" transform="rotate(-18 300 300)" opacity="0.7"/>
-    </g>
-    <g class="ring-a" style="transform-origin:300px 300px;">
-      <circle class="ring-dot" cx="560" cy="300" r="5"/>
-    </g>
-    <g class="ring-b" style="transform-origin:300px 300px;">
-      <circle class="ring-dot" cx="300" cy="150" r="4"/>
-    </g>
-  </svg>
+<section class="page-hero grain">
+  <div class="stars"></div>
+  <svg class="orbit" viewBox="0 0 600 600" aria-hidden="true"><circle cx="300" cy="300" r="290"/><circle cx="300" cy="300" r="215"/></svg>
   <div class="container reveal">
-    <p class="eyebrow" style="justify-content:center;">
-      <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-      About Creatisphere
-    </p>
-    <h1>The story behind the solar system.</h1>
-    <p>A creative business consulting practice built in Atlanta, for creatives everywhere.</p>
+    <p class="eyebrow">About</p>
+    <h1>Creatisphere Studios.</h1>
+    <p class="lead">A creative enterprise in Atlanta, founded by Destiny.</p>
   </div>
 </section>
 
 <!-- ===== Founder note ===== -->
 <section class="section-light">
-  <div class="container">
-    <div class="section-head left reveal" style="max-width:700px;">
-      <p class="eyebrow moss">A Note From the Founder</p>
-    </div>
+  <div class="container two-col">
+    <p class="eyebrow reveal">A note from the founder</p>
     <div class="founder-note reveal">
-      <p>If you are reading this, you are becoming part of something built because it did not exist yet. Creatisphere started with a simple belief: creatives deserve real support to build a real business, not just likes, not a side hustle that never quite takes off, but an actual creative universe of guidance, tools, and community moving in the same direction.</p>
-      <p>Like a solar system, each of us brings our own light: our talents, our ideas, our way of seeing the world. But a creative business needs more than talent. It needs strategy, structure, and people around you who want to see you win.</p>
-      <p>Creatisphere exists to close the gap between talented creatives and the consulting, tools, and community they need to turn what they do into something that lasts. Every decision gets measured against one question. Does this actually help a creative build a real business? If yes, we build it. If not, we skip it.</p>
+      <p>Creatisphere started because the thing I was looking for did not exist yet. I wanted real support for creative work: guidance, tools, and people moving in the same direction.</p>
+      <p>Talent is not enough on its own. A creative business also needs strategy, structure, and people who want to see you win.</p>
+      <p>So every decision here gets measured against one question. Does this actually move a creative's business or vision forward? If yes, we build it. If not, we skip it.</p>
       <span class="signature">Destiny</span>
       <p class="role">Founder, Creatisphere Studios</p>
     </div>
   </div>
 </section>
 
-<!-- ===== Mission statement ===== -->
-<section class="section-dark quote-band">
-  <div class="container reveal">
-    <p class="script">"To help creatives build businesses that last."</p>
-    <p class="attr">The Creatisphere Mission</p>
+<!-- ===== Mission ===== -->
+<section class="section-dark grain">
+  <span class="eclipse" style="left:-320px;bottom:-380px;" aria-hidden="true"></span>
+  <div class="container two-col reveal">
+    <p class="eyebrow">Mission</p>
+    <p class="big-line" style="font-family:var(--font-display);line-height:1.05;">To help creatives build businesses that last.</p>
   </div>
 </section>
 
-<!-- ===== Four Pillars recap ===== -->
+<!-- ===== The four elements ===== -->
 <section class="section-light">
   <div class="container">
-    <div class="section-head reveal">
-      <div class="divider"><span class="line"></span>
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-      <span class="line"></span></div>
-      <p class="eyebrow" style="justify-content:center;">How We're Built</p>
-      <h2>Four pillars, one solar system.</h2>
-      <p>You're the center of everything Creatisphere does. Here's how each pillar orbits around you to support the business you're building.</p>
+    <div class="section-top reveal">
+      <p class="eyebrow">How we're organized</p>
+      <h2 class="statement">Four elements.</h2>
     </div>
-    <div class="pillars-grid stagger-group">
-      <div class="pillar-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <span class="tag">Consult</span>
-        <h3>Creatisphere</h3>
-        <p>Creative business consulting: strategy sessions and hands-on guidance to help you plan, price, and grow with confidence.</p>
-      </div>
-      <div class="pillar-card green">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <span class="tag">Learn</span>
-        <h3>Knowledge Nova</h3>
-        <p>Live and virtual workshops on the skills every business needs: pricing, branding, marketing, and the fundamentals of running things well.</p>
-      </div>
-      <div class="pillar-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <span class="tag">Grow</span>
-        <h3>Growth Galaxy</h3>
-        <p>Our digital magazine puts your business and your story in front of the people who need to find you.</p>
-      </div>
-      <div class="pillar-card green">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <span class="tag">Connect</span>
-        <h3>Community Cosmos</h3>
-        <p>In-person and virtual gatherings, meetups, and outreach that keep you connected to a community built to support you.</p>
-      </div>
+    <div class="el-index reveal">
+      <a href="gravity.html"><span class="el-name">Gravity</span><span class="el-mini">Creative Projects</span><span class="el-tagline">Pull the vision together.</span></a>
+      <a href="nova.html"><span class="el-name">Nova</span><span class="el-mini">Knowledge</span><span class="el-tagline">Illuminate possibility.</span></a>
+      <a href="galaxy.html"><span class="el-name">Galaxy</span><span class="el-mini">Growth</span><span class="el-tagline">Expand what's possible.</span></a>
+      <a href="cosmos.html"><span class="el-name">Cosmos</span><span class="el-mini">Community</span><span class="el-tagline">Connect the creative universe.</span></a>
     </div>
   </div>
 </section>
 
-<!-- ===== Core values ===== -->
+<!-- ===== Values ===== -->
 <section class="section-sand">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow moss" style="justify-content:center;">What We Stand On</p>
-      <h2>The values behind every decision.</h2>
+    <div class="section-top reveal">
+      <p class="eyebrow">Values</p>
+      <h2 class="statement">What we stand on.</h2>
     </div>
-    <div class="values-grid stagger-group">
-      <div class="value-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Excellence</h4>
-        <p>We pursue the highest standard in everything we build.</p>
-      </div>
-      <div class="value-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Integrity</h4>
-        <p>We operate with honesty, transparency, and respect.</p>
-      </div>
-      <div class="value-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Creativity</h4>
-        <p>Innovation drives every part of what we do.</p>
-      </div>
-      <div class="value-card moss-accent">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Community</h4>
-        <p>We succeed together, not in competition.</p>
-      </div>
-      <div class="value-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Opportunity</h4>
-        <p>We create access and open doors that were closed.</p>
-      </div>
-      <div class="value-card moss-accent">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Growth</h4>
-        <p>We are lifelong learners committed to improving.</p>
-      </div>
-      <div class="value-card">
-        <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="50" cy="50" rx="45" ry="14" fill="none" stroke="currentColor" stroke-width="2.5" transform="rotate(-20 50 50)"/><circle cx="50" cy="50" r="3" fill="currentColor"/></svg>
-        <h4>Inclusion</h4>
-        <p>We welcome every background, identity, and perspective.</p>
-      </div>
+    <div class="values reveal">
+      <div class="value"><h3>Excellence</h3><p>We pursue the highest standard in everything we build.</p></div>
+      <div class="value"><h3>Integrity</h3><p>We operate with honesty, transparency, and respect.</p></div>
+      <div class="value"><h3>Creativity</h3><p>Innovation drives every part of what we do.</p></div>
+      <div class="value"><h3>Community</h3><p>We succeed together, not in competition.</p></div>
+      <div class="value"><h3>Opportunity</h3><p>We create access and open doors that were closed.</p></div>
+      <div class="value"><h3>Growth</h3><p>We are lifelong learners committed to improving.</p></div>
+      <div class="value"><h3>Inclusion</h3><p>We welcome every background, identity, and perspective.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===== Why Atlanta cinematic band ===== -->
-<section class="cinematic-band moss-tint">
-  <img class="bg-image" src="https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?auto=format&fit=crop&w=1800&q=80" alt="Atlanta skyline at sunset">
-  <div class="cinematic-content reveal">
-    <p class="script">"One of the fastest growing creative hubs in the country."</p>
-    <p class="byline">Why Creatisphere Calls Atlanta Home</p>
+<!-- ===== Atlanta ===== -->
+<section class="section-light">
+  <div class="container two-col reveal">
+    <p class="eyebrow">Atlanta</p>
+    <div>
+      <p class="big-line" style="font-family:var(--font-display);line-height:1.05;">One of the fastest growing creative hubs in the country.</p>
+      <p class="trio-cap" style="color:var(--walnut);">Why Creatisphere calls Atlanta home.</p>
+    </div>
   </div>
 </section>
 
-<!-- ===== Final CTA ===== -->
-<section class="section-light cta-band">
-  <div class="container reveal">
-    <h2>Ready to build with us?</h2>
-    <p style="max-width:520px;margin:0 auto 32px;color:var(--walnut);">Join a community built for creatives, by a creative, and get the consulting, workshops, and support to grow.</p>
-    <div class="hero-actions">
-      <a href="contact.html#join" class="btn btn-primary">Join the Community</a>
-      <a href="consulting.html" class="btn btn-secondary on-light">Book a Consult</a>
+<!-- ===== Closing ===== -->
+<section class="section-sand closing">
+  <span class="ring" aria-hidden="true"></span>
+  <div class="container closing-grid reveal">
+    <h2 class="statement">Bring us what you're working on.</h2>
+    <div>
+      <p>A business, a project, or an idea. We'll bring our elements together and find where Creatisphere can plug in.</p>
+      <a href="join.html" class="btn">Get connected with a specialist</a>
     </div>
   </div>
 </section>
 
 <!-- ===== Footer ===== -->
-<footer class="site-footer">
-  <img src="images/solar-flower-watermark.png" alt="" class="footer-mark">
-  <svg class="solar-flower footer-flower" viewBox="0 0 240 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <defs>
-      <radialGradient id="sfSphere3" cx="35%" cy="32%" r="75%">
-        <stop offset="0%" stop-color="#F8E7AE"/>
-        <stop offset="45%" stop-color="#D4AF37"/>
-        <stop offset="100%" stop-color="#8A621F"/>
-      </radialGradient>
-      <linearGradient id="sfLeaf3" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#F3D998"/>
-        <stop offset="100%" stop-color="#9C6B1F"/>
-      </linearGradient>
-    </defs>
-
-    <path d="M120 415 C117 320 123 270 120 205" fill="none" stroke="#A67C2E" stroke-width="4" stroke-linecap="round"/>
-
-    <path fill="url(#sfLeaf3)" d="M120 300 C88 292 55 302 34 333 C66 322 98 320 120 308 Z"/>
-    <path fill="url(#sfLeaf3)" d="M120 300 C152 292 185 302 206 333 C174 322 142 320 120 308 Z"/>
-    <path fill="url(#sfLeaf3)" d="M120 352 C97 346 70 356 53 383 C79 373 106 371 120 361 Z"/>
-    <path fill="url(#sfLeaf3)" d="M120 352 C143 346 170 356 187 383 C161 373 134 371 120 361 Z"/>
-
-    <circle cx="50" cy="335" r="4" fill="var(--gold)"/>
-    <circle cx="190" cy="335" r="3.5" fill="var(--gold)"/>
-
-    <g transform="translate(120,110)">
-      <g class="spin-slower" style="transform-origin:0px 0px;">
-        <ellipse class="orbit-ring" rx="84" ry="26" transform="rotate(-18)" opacity="0.6"/>
-      </g>
-      <circle r="55" fill="url(#sfSphere3)"/>
-      <g class="spin-slower" style="transform-origin:0px 0px;">
-        <path class="orbit-ring" d="M 54,-19.9 A 84 26 0 0 1 54,19.9" transform="rotate(-18)" fill="none"/>
-      </g>
-      <g class="spin-slow" style="transform-origin:0px 0px;">
-        <circle class="orbit-dot" cx="80" cy="-14" r="5"/>
-        <circle class="orbit-dot" cx="98" cy="-2" r="3"/>
-      </g>
-    </g>
-  </svg>
+<footer class="site-footer grain">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="images/logo.png" alt="Creatisphere Studios logo">
-        <p>A creative business consulting practice based in Atlanta, helping creatives build real, lasting businesses through consulting, workshops, a digital magazine, and a community built to support them.</p>
+        <p>A creative enterprise for businesses and creatives, connecting project management, consulting, education, media, marketing, and community. Atlanta, GA.</p>
       </div>
       <div class="footer-col">
-        <h5>Explore</h5>
-        <a href="about.html">About</a>
-        <a href="consulting.html">Creatisphere Consulting</a>
-        <a href="knowledge-nova.html">Knowledge Nova</a>
-        <a href="growth-galaxy.html">Growth Galaxy</a>
-        <a href="community-cosmos.html">Community Cosmos</a>
-        <a href="partners.html">Partners &amp; Sponsors</a>
+        <h2>About</h2>
+        <a href="about.html">About the studio</a>
+        <a href="partners.html">Partners and sponsors</a>
+        <h2 class="footer-sub">Elements</h2>
+        <a href="gravity.html" class="footer-el"><span>Gravity</span><small>Creative Projects</small></a>
+        <a href="nova.html" class="footer-el"><span>Nova</span><small>Knowledge</small></a>
+        <a href="galaxy.html" class="footer-el"><span>Galaxy</span><small>Growth</small></a>
+        <a href="cosmos.html" class="footer-el"><span>Cosmos</span><small>Community</small></a>
       </div>
       <div class="footer-col">
-        <h5>Connect</h5>
+        <h2>Contact</h2>
+        <a href="contact.html#message">Send a message</a>
+        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">Email us</a>
+        <a href="contact.html#join">Join the community list</a>
+      </div>
+      <div class="footer-col">
+        <h2>Connect</h2>
         <a href="https://www.instagram.com/creatispherestudios/" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.tiktok.com/@creatispherestudios" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.linkedin.com/in/creatisphere-studios-154155412/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://www.threads.com/@creatispherestudios" target="_blank" rel="noopener">Threads</a>
       </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="mailto:creatispherestudios@gmail.com?subject=Creatisphere%20Studios%20Website%20Inquiry">creatispherestudios@gmail.com</a>
-        <a href="contact.html">Contact Page</a>
-      </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Creatisphere Studios. Your Creative Universe.
-    <div class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></div>
+      <span>&copy; 2026 Creatisphere Studios</span>
+      <span class="legal-links"><a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-of-service.html">Terms of Service</a></span>
     </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=29"></script>
 </body>
 </html>
