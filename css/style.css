@@ -1175,3 +1175,27 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
   .page-hero:has(.solar-flower) { padding-bottom: 250px; }
   .solar-flower { height: 220px; opacity: 0.85; right: 24px; }
 }
+
+/* Readable sizes inside the orbit diagram */
+.sys-mini { font-size: 19px; }
+.sys-cap { font-size: 18px; }
+@media (max-width: 900px) {
+  .sys-mini { font-size: 24px; letter-spacing: 0.1em; }
+  .sys-cap { font-size: 23px; }
+  .sys-knock .sys-mini { stroke-width: 14px; }
+}
+
+/* Footer and inline links: big enough to tap */
+.footer-col a { padding: 7px 0; margin-bottom: 0; }
+.footer-col a.footer-el { padding: 5px 0; }
+.legal-links a { display: inline-block; padding: 10px 0; }
+.contact-note a, .form-checkbox a, .legal-content a { display: inline-block; padding: 3px 0; }
+
+@media (max-width: 900px) {
+  /* Keep every orbit name fully on screen: smaller drift, slightly smaller labels */
+  .sys-orbit { animation-name: sway-small; }
+  .sys-mini { font-size: 22px; }
+  /* The decorative ring behind closing sections is desktop only */
+  .closing .ring { display: none; }
+}
+@keyframes sway-small { from { transform: rotate(-2deg); } to { transform: rotate(2deg); } }
