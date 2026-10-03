@@ -1199,3 +1199,17 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
   .closing .ring { display: none; }
 }
 @keyframes sway-small { from { transform: rotate(-2deg); } to { transform: rotate(2deg); } }
+
+/* Orbit diagram: a second layout sized to fit a phone screen whole */
+.system-m { display: none; }
+@media (max-width: 900px) {
+  .system-d { display: none; }
+  .system.system-m { display: block; width: 100%; max-width: 560px; margin: 0 auto; }
+  .system-m .sys-name { font-size: 56px; }
+  .system-m .sys-mini { font-size: 31px; letter-spacing: 0.03em; }
+  .system-m .sys-knock .sys-mini { stroke-width: 14px; }
+  .system-m .sys-you { font-size: 66px; }
+  .system-m .sys-cap { font-size: 32px; }
+  .system-m .sys-orbit { animation-name: sway-tiny; }
+}
+@keyframes sway-tiny { from { transform: rotate(-1deg); } to { transform: rotate(1deg); } }
