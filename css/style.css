@@ -333,7 +333,7 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
 
 .el-tagline {
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(1.6rem, 2.6vw, 2.1rem);
   line-height: 1.2;
   margin-bottom: 18px;
@@ -492,7 +492,7 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
 .founder-note .signature {
   display: block;
   font-family: var(--font-display);
-  font-style: italic;
+  font-style: normal;
   font-size: 2.2rem;
   margin-top: 36px;
 }
@@ -1069,12 +1069,6 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
 }
 
 
-/* Home hero: logo watermark on the left, big spinning orbit stays on the right, text on the right */
-.hero-glow { left: -4%; right: auto; }
-@media (min-width: 901px) {
-  .hero .container { padding-left: max(28%, 400px); }
-}
-
 /* ---------- Join the Universe: selector, summary, then one contact form ---------- */
 .consult { row-gap: 0; }
 .selector { grid-column: 1; grid-row: 1; }
@@ -1213,3 +1207,74 @@ section { padding: clamp(80px, 11vw, 150px) 0; position: relative; }
   .system-m .sys-orbit { animation-name: sway-tiny; }
 }
 @keyframes sway-tiny { from { transform: rotate(-1deg); } to { transform: rotate(1deg); } }
+
+/* ============================================================
+   Quieter, more refined pass (2026-10-15)
+   One watermark in place of the moving circles, no star field,
+   no grain, no italics, two background colors only.
+   ============================================================ */
+
+/* No decorative noise */
+.grain::after, .stars, .eclipse, .closing .ring, .orbit { display: none; }
+
+/* Upright type everywhere: only the two fonts, never italic */
+em, i, .el-tagline, .founder-note .signature { font-style: normal; }
+.el-tagline { font-weight: 500; letter-spacing: 0.01em; }
+
+/* Two background colors: espresso and honey. Light sections are divided by a thin rule. */
+.section-sand { background: var(--honey); }
+.section-light + .section-sand, .section-sand + .section-light, .section-sand + .section-sand, .section-light + .section-light { border-top: 1px solid var(--rule-dark); }
+
+/* Home hero: the watermark sits on the right where the moving circle was, text on the left */
+.hero-glow {
+  left: auto;
+  right: 4%;
+  top: 50%;
+  bottom: auto;
+  width: min(500px, 40vw);
+  max-width: none;
+  transform: translateY(-42%);
+  opacity: 0.85;
+}
+.hero .container { width: 100%; padding-left: var(--gutter); }
+
+/* Inner page heroes: the same watermark, softer */
+.page-mark {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  width: min(420px, 40vw);
+  transform: translateY(-50%);
+  mix-blend-mode: screen;
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Calmer labels */
+.eyebrow { letter-spacing: 0.18em; }
+
+/* The YOU orbit, condensed */
+.system-section { padding: clamp(64px, 8vw, 104px) 0; }
+@media (min-width: 901px) { .system-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.system-d { max-width: 500px; justify-self: end; }
+.sys-orbit { animation: none; }
+
+@media (max-width: 900px) {
+  .hero-glow { right: -36px; top: 84px; width: 230px; transform: none; opacity: 0.5; }
+  .page-mark { right: -50px; top: 96px; width: 210px; transform: none; opacity: 0.3; }
+  .system.system-m { max-width: 420px; }
+  .system-grid { gap: 40px; }
+}
+@media (min-width: 901px) {
+  .hero-glow { width: min(500px, 34vw); }
+  .hero .container > * { max-width: min(640px, 52vw); }
+}
+@media (max-width: 900px) {
+  /* On phones the inner page watermark would sit under the big titles, so only the home page shows it */
+  .page-mark { display: none; }
+}
+@media (min-width: 901px) {
+  .page-hero .lead { max-width: min(50ch, 56vw); }
+}
+.page-hero.tall .container { width: 100%; }
