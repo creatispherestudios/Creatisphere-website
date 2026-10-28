@@ -1278,3 +1278,5 @@ em, i, .el-tagline, .founder-note .signature { font-style: normal; }
   .page-hero .lead { max-width: min(50ch, 56vw); }
 }
 .page-hero.tall .container { width: 100%; }
+
+.form-status { margin-top: 16px; max-width: 46ch; font-size: 0.92rem; font-weight: 500; color: var(--espresso); border-left: 2px solid var(--gold); padding-left: 12px; }

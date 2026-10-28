@@ -305,3 +305,47 @@ if (consult) {
   syncOther();
   renderSummary();
 }
+
+// Send every form in the background instead of loading a new page.
+// If the connection drops, the visitor sees a plain message and keeps what they typed,
+// instead of a browser error page. One automatic retry covers brief drops.
+document.querySelectorAll('form input[name="form-name"]').forEach((hidden) => {
+  const form = hidden.form;
+  if (!form || !window.fetch) return;
+
+  const button = form.querySelector('[type="submit"]');
+  const status = document.createElement('p');
+  status.className = 'form-status';
+  status.setAttribute('role', 'alert');
+  status.hidden = true;
+  button.insertAdjacentElement('afterend', status);
+
+  const send = (body) => fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body,
+  }).then((res) => {
+    if (!res.ok) throw new Error('status ' + res.status);
+  });
+
+  form.addEventListener('submit', async (e) => {
+    if (e.defaultPrevented) return;
+    e.preventDefault();
+
+    const label = button.textContent;
+    const body = new URLSearchParams(new FormData(form)).toString();
+    button.disabled = true;
+    button.textContent = 'Sending';
+    status.hidden = true;
+
+    try {
+      await send(body).catch(() => new Promise((r) => setTimeout(r, 1500)).then(() => send(body)));
+      window.location.href = '/thank-you';
+    } catch (err) {
+      status.textContent = 'That did not go through, usually because the connection dropped. Your answers are still here, so just press the button again.';
+      status.hidden = false;
+      button.disabled = false;
+      button.textContent = label;
+    }
+  });
+});
